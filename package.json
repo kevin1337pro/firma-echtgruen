@@ -1,0 +1,30 @@
+{
+  "name": "firma-echtgruen",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NEXT_DIST_DIR=.next-dev node scripts/dev-with-chunk-sync.mjs",
+    "build": "NEXT_DIST_DIR=.next next build && NEXT_DIST_DIR=.next node scripts/sync-next-server-chunks.mjs",
+    "start": "NEXT_DIST_DIR=.next node scripts/sync-next-server-chunks.mjs && NEXT_DIST_DIR=.next next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.5.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "gsap": "^3.14.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "eslint": "^9.25.0",
+    "eslint-config-next": "^15.5.2",
+    "typescript": "^5.8.3"
+  },
+  "description": "Independent EchtGrün website concept with GSAP scroll storytelling, adapted from firma-enbergs",
+  "overrides": {
+    "postcss": "8.5.31"
+  }
+}
