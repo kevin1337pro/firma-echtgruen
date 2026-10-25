@@ -7,7 +7,8 @@
     "build": "NEXT_DIST_DIR=.next next build && NEXT_DIST_DIR=.next node scripts/sync-next-server-chunks.mjs",
     "start": "NEXT_DIST_DIR=.next node scripts/sync-next-server-chunks.mjs && NEXT_DIST_DIR=.next next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "preview": "node scripts/preview-static.mjs"
   },
   "dependencies": {
     "next": "^15.5.2",
